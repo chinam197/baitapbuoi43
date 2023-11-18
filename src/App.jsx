@@ -61,8 +61,6 @@ const App = () => {
       )}
       {spinner && <Loading />}
       <Alert />
-      <Return />
-      <Cart />
     </AppConText.Provider>
   );
 };

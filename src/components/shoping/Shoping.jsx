@@ -5,6 +5,8 @@ import { useContext } from "react";
 import { AppConText } from "../../App";
 import { client } from "../../configs/client";
 import Product from "../product/Product";
+import Return from "../return/Return";
+import Cart from "../cart/Cart";
 let carts = JSON.parse(localStorage.getItem("my_cart")) || [];
 export const updateCarts = (value = []) => {
   carts = value;
@@ -146,6 +148,8 @@ const Shoping = () => {
             )}
           </div>
           <Product />
+          <Return />
+          <Cart />
         </div>
       </main>
       <div className="Toastify"></div>
